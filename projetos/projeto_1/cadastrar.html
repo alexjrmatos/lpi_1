@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <title>Cadastro de Produto</title>
+</head>
+
+<body>
+    <main>
+        <h1>Cadastrando um Produto</h1>
+        <hr><br>
+        <form action="cadastrar.php" method="post">
+            <table>
+                <tr>
+                    <td>Marca:</td>
+                    <td><input name='marcaProd' type='text' size=30 placeholder="Marca" required> *</td>
+                </tr>
+                <tr>
+                    <td>Modelo:</td>
+                    <td><input name='modeloProd' type='text' size=30 placeholder="Modelo" required> *</td>
+                </tr>
+                <tr>
+                    <td>Cor:</td>
+                    <td><input name='corProd' type='text' placeholder="Cor" size=30></td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit" value="Cadastrar">
+        </form>
+    </main>
+</body>
+
+</html>

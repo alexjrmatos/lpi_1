@@ -1,0 +1,29 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    
+}
+
+input[type=submit] {
+    border-radius: 15px;
+    width: 6%;
+    background-color: lightgrey;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+select {
+    width: 100%;
+}
+
+td {
+    padding: 3px;
+}
+
+h1 {
+    background-color: lightgrey;
+    width: 100%;
+    text-align: center;
+}
