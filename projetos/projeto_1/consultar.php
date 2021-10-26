@@ -1,3 +1,7 @@
+<head>
+    <link rel="stylesheet" href="global.css">
+</head>
+
 <?php
 
 $conexao = mysql_connect("localhost:3306", "root", "root") or die ("Conexão ao banco de dados não realizada!");

@@ -1,29 +1,49 @@
-* {
+body {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 1.4;
+    color: #c4c3ca;
+    background-color: #1f2029;
+}
+
+select {
+    font-size: 19px;
+    width: 100%;
+}
+
+input {
+    font-size: 18px;
 }
 
 input[type=submit] {
     border-radius: 15px;
-    width: 6%;
+    width: 10%;
     background-color: lightgrey;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
 }
 
 h1 {
     font-size: 28px;
 }
 
-select {
-    width: 100%;
-}
-
 td {
-    padding: 3px;
+    padding: 5px;
+    width: auto;
 }
 
 h1 {
-    background-color: lightgrey;
-    width: 100%;
     text-align: center;
+}
+
+a {
+    cursor: pointer;
+    transition: all 200ms linear;
+}
+
+a:hover {
+    text-decoration: none;
 }
