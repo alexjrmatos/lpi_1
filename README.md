@@ -5,6 +5,6 @@ repo utilizado para salvar os exercícios e projetos feitos para a matéria de l
 ### matérias estudadas
 - html
 - css
-- javascript
+- java
 - php
 - banco de dados relacionais
