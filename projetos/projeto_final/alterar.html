@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alteração de Produto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+</head>
+
+<body>
+    <main>
+        <h1>Alterando um Produto</h1>
+        <hr><br>
+        <form action="alterar.php" method="post">
+            <table>
+                <tr>
+                    <td>Selecione a informação a ser alterada:</td>
+                    <td>
+                        <select name="infos" id="infos">
+                            <option value="marca">Marca</option>
+                            <option value="modelo">Modelo</option>
+                            <option value="cor">Cor</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Novo valor a ser inserido:</td>
+                    <td><input name="newinfo" type="text" placeholder="Novo valor" required></td>
+                </tr>
+                <tr>
+                    <td>Id do produto a ser alterado (Caso não saiba consulte <b><a href="consultar.php">aqui</a></b>):
+                    </td>
+                    <td><input name="idinformado" type="text" placeholder="Id do produto" required></td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit" value="Alterar">
+        </form>
+    </main>
+</body>
+
+</html>
