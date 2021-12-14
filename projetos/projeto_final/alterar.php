@@ -22,3 +22,14 @@ $sql = mysql_query($query) or die ("Falha ao alterar os dados!");
 echo utf8_decode("<h1>Alteração efetuada com sucesso!</h1>");
 mysql_close($conexao);
 ?>
+
+<head>
+    <link rel="stylesheet" href="global.css">
+</head>
+<title>Alteração de Produtos</title>
+<style type="text/css">
+    * {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+    };
+</style>

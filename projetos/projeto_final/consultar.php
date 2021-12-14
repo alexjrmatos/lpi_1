@@ -12,12 +12,21 @@
         $modelo = $linha["modelo"];
         $preco = $linha["preco"];
         $no_estoque = $linha["no_estoque"];
+        $imagem = $linha["imagem"];
 
         echo utf8_decode("<b>Código no Sistema</b>: $id");
         echo "<br>";
         echo utf8_decode("<b>Preço</b>: $preco");
         echo "<br>";
         echo "<b>Modelo</b>: $modelo";
+        echo "<br>";
+
+        if($imagem === NULL) {
+            echo "<b>Imagem</b>: Nenhuma.";
+        } else {
+            echo "<b>Imagem</b>: <a href=`$imagem`>Produto</a>";
+        }
+
         echo "<br>";
         echo "<b>Temos no estoque?</b>: "; 
 

@@ -3,6 +3,7 @@
     $preco = $_POST["precoProd"];
     $modelo = $_POST["modeloProd"];
     $estoque = $_POST["noEstoque"];
+    $image = $_POST["imgProd"];
 
     if($estoque == "Sim" || $estoque == "sim") {
         $estoque = 1;
@@ -10,8 +11,11 @@
         $estoque = 0;
     }
 
-    $query = "INSERT INTO armazem (preco, modelo, no_estoque) VALUES ('$preco', '$modelo', '$estoque')";
-
+    if($image !== NULL) {
+        $query = "INSERT INTO armazem (preco, modelo, no_estoque, imagem) VALUES ('$preco', '$modelo', '$estoque', '$image')";
+    } else {
+        $query = "INSERT INTO armazem (preco, modelo, no_estoque) VALUES ('$preco', '$modelo', '$estoque')";
+    }
 
     $conexao = mysql_connect("localhost:3306", "root", "root") or die ("Conexão ao banco de dados não realizada!");
     $db = mysql_select_db("armazem_eletronicos") or die ("Banco de dados não encontrado!");

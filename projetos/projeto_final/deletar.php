@@ -2,7 +2,6 @@
     $idinformado = $_POST["idinformado"];
 
     $query = "DELETE FROM armazem WHERE id = $idinformado";
-
     $conexao = mysql_connect("localhost:3306", "root", "root") or die ("Conexão ao banco de dados não realizada!");
     $db = mysql_select_db("armazem_eletronicos") or die ("Banco de dados não encontrado!");
 
